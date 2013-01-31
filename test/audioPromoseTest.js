@@ -7,3 +7,13 @@ asyncTest( " returns a promise object which should resolve with the audio object
 	start();
     });
 });
+
+
+asyncTest( " if the audio file does not exits the promise will be rejected", 2, function() {
+    var promise = $.audioPromise(new Audio('audio/idonotexist.mp3'));
+
+    promise.fail(function(audio) {
+	ok(true);
+	start();
+    });
+});
