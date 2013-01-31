@@ -5,6 +5,9 @@
 	$(audio).on('loadeddata', function() {
 	    deferred.resolve(audio);
 	});
+	$(audio).on('error', function() {
+	    deferred.reject(audio);
+	});
 	return deferred.promise();
     };
 
