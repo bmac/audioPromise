@@ -2,12 +2,18 @@
 
     $.audioPromise = function ( audio ) {
 	var deferred = $.Deferred();
-	$(audio).on('loadeddata', function() {
+	if (audio.duration) {
 	    deferred.resolve(audio);
-	});
-	$(audio).on('error', function() {
-	    deferred.reject(audio);
-	});
+	}
+
+	if (deferred.state() === 'pending') {
+	    $(audio).on('loadeddata', function() {
+		deferred.resolve(audio);
+	    });
+	    $(audio).on('error', function() {
+		deferred.reject(audio);
+	    });
+	}
 	return deferred.promise();
     };
 
