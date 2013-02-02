@@ -5,6 +5,9 @@
 	if (audio.duration) {
 	    deferred.resolve(audio);
 	}
+	if (audio.error) {
+	    deferred.reject(audio);
+	}
 
 	if (deferred.state() === 'pending') {
 	    $(audio).on('loadeddata', function() {
