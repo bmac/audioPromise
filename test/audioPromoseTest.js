@@ -66,9 +66,19 @@ asyncTest( "audioPromise can be used as a jquery selector to select one element"
 });
 
 asyncTest( "audioPromise can be used as a jquery selector on multiple elemens", 1, function() {
-    var promise = $('.maybeAudio').audioPromise();
+    var promise = $('.maybe-audio').audioPromise();
 
     promise.done(function() {
+	ok(true);
+	start();
+    });
+
+});
+
+asyncTest( "If one audio element fails to load the promise should be rejected", 1, function() {
+    var promise = $('.maybe-bad-audio').audioPromise();
+
+    promise.fail(function() {
 	ok(true);
 	start();
     });
