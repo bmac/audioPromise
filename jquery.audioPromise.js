@@ -33,9 +33,8 @@
     };
 
     $.fn.audioPromise = function() {
-	var audio = this[0];
-	console.log(this);
-	return $.audioPromise(audio);
+	var promises = $.map(this, $.audioPromise);
+	return $.when.apply($, promises);
     };
 
 })( jQuery, window, document );

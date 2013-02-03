@@ -64,3 +64,13 @@ asyncTest( "audioPromise can be used as a jquery selector to select one element"
     });
 
 });
+
+asyncTest( "audioPromise can be used as a jquery selector on multiple elemens", 1, function() {
+    var promise = $('.maybeAudio').audioPromise();
+
+    promise.done(function() {
+	ok(true);
+	start();
+    });
+
+});
