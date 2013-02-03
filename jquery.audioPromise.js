@@ -32,4 +32,10 @@
 	return deferred.promise();
     };
 
+    $.fn.audioPromise = function() {
+	var audio = this[0];
+	console.log(this);
+	return $.audioPromise(audio);
+    };
+
 })( jQuery, window, document );
