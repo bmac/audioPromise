@@ -1,7 +1,19 @@
 ;(function ( $, window, document, undefined ) {
 
+    var isAudioElement = function(audio) {
+	if (!audio) {
+	    return false;
+	}
+	return 'duration' in audio;
+    };
+
+
     $.audioPromise = function ( audio ) {
-	var deferred = $.Deferred();
+	if (!isAudioElement(audio)) {
+	    return null;
+	}
+
+	 var deferred = $.Deferred();
 	if (audio.duration) {
 	    deferred.resolve(audio);
 	}

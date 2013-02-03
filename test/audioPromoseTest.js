@@ -47,3 +47,9 @@ asyncTest( "The promise should be rejected if the audio element has an error", 1
 	});
     });
 });
+
+
+test( "audioPromise should return null if an audio element is not passed in as an argument", 1, function() {
+    var promise = $.audioPromise({});
+    equal(promise, null, 'promise should be null');
+});
