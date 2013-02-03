@@ -56,7 +56,7 @@ test( "audioPromise should return null if an audio element is not passed in as a
 
 
 asyncTest( "audioPromise can be used as a jquery selector to select one element", 1, function() {
-    var promise = $('#testElement').audioPromise();
+    var promise = $('#test-element').audioPromise();
 
     promise.done(function(audio) {
 	ok(audio.duration, 'audio.duration should not be NaN');
