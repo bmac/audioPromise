@@ -2,8 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>QUnit Example</title>
-  <link rel="stylesheet" href="css/qunit-1.11.0.css">
+  <title>audioPromise Test Suite</title>
+  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+  <script src="../libs/jquery-loader.js"></script>
+  <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.audioPromise.js"></script>
+  <script src="audioPromiseTest.js"></script>
 </head>
 <body>
   <div id="qunit"></div>
@@ -13,9 +20,5 @@
     <audio src="audio/idonotexist.mp3" class="maybe-bad-audio"></audio>
     <div class="maybe-audio maybe-bad-audio"></div>
   </div>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="../jquery.audioPromise.js"></script>
-  <script src="qunit-1.11.0.js"></script>
-  <script src="audioPromoseTest.js"></script>
 </body>
 </html>
