@@ -1,5 +1,5 @@
 {
-  "name": "audioPromise",
+  "name": "jquery.audioPromise",
   "title": "audioPromise",
   "description": "a promise wrapper for audio elements",
   "version": "0.1.0",
