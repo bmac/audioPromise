@@ -1,0 +1,28 @@
+{
+  "name": "audioPromise",
+  "title": "audioPromise",
+  "description": "a promise wrapper for audio elements",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bmac/audioPromise",
+  "author": {
+    "name": "bmac",
+    "email": "bmac325@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmac/audioPromise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bmac/audioPromise/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bmac/audioPromise/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
