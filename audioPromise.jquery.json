@@ -1,8 +1,8 @@
 {
-  "name": "jquery.audioPromise",
+  "name": "audioPromise",
   "title": "audioPromise",
   "description": "a promise wrapper for audio elements",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/bmac/audioPromise",
   "author": {
     "name": "bmac",
@@ -22,7 +22,7 @@
     }
   ],
   "dependencies": {
-    "jquery": "*"
+    "jquery": ">=1.7"
   },
   "keywords": []
 }
