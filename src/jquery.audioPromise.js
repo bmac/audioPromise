@@ -13,7 +13,7 @@
             return null;
         }
 
-         var deferred = $.Deferred();
+        var deferred = $.Deferred();
         if (audio.duration) {
             deferred.resolve(audio);
         }

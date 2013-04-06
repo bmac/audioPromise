@@ -1,5 +1,5 @@
 /*globals $,asyncTest,deepEqual,equal,expect,module,notDeepEqual,notEqual,
-    notStrictEqual,ok,QUnit,raises,start,stop,strictEqual,test */
+ notStrictEqual,ok,QUnit,raises,start,stop,strictEqual,test */
 
 var audioUrl = 'audio/the_black_atlantic_-_dandelion.mp3';
 var errorUrl = 'audio/idonotexist.mp3';
