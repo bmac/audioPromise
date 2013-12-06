@@ -4,7 +4,7 @@ audioPromise
 A simple promise wrapper for audio elements.
 
 Attempting to manipulate the currentTime attribute of an audio or video 
-element before the audio data is loaded will result in a INVALID_STATE_ERR error.
+element before the audio data is loaded will result in an INVALID_STATE_ERR error.
 
 ```javascript
 var audio = new Audio('http://example.com/someAudioFile.mp3');
